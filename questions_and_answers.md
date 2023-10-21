@@ -20,7 +20,7 @@ console.log(greetign);
 
 #### Answer: A
 
-<i>Write your explanation here</i>
+<i>Write your explanation here</i> <br/>
   here correct ans is empty object.
    because we did not add any value in that object .so, its show empty object
 </p>
@@ -46,7 +46,7 @@ sum(1, "2");
 
 #### Answer: C
 
-<i>Write your explanation here</i>
+<i>Write your explanation here</i> <br/>
 the answer is c. because in addition of javascript, if any addable number is string , then its take place one number after.
 and the full answer will be string
 </p>
@@ -73,7 +73,7 @@ console.log(food);
 
 #### Answer: A
 
-<i>Write your explanation here</i>
+<i>Write your explanation here</i> <br/>
   the answer is a . because here console.log(food).
   which means its console full array 
 </p>
@@ -99,7 +99,7 @@ console.log(sayHi());
 
 #### Answer: B
 
-<i>Write your explanation here</i>
+<i>Write your explanation here</i> <br/>
     The ans is b , because we take parameter in the function , but we can not provide any argument ,, so that its undefine
 </p>
 </details>
@@ -127,7 +127,7 @@ console.log(count);
 
 #### Answer: C
 
-<i>Write your explanation here</i>
+<i>Write your explanation here</i> <br/>
   because its work on truthy value, but 0 is not truth value, so , count do not increase 
   . after 1 it increasing and make count highest 3 
 </p>
