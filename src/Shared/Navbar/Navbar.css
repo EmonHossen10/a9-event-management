@@ -1,0 +1,7 @@
+nav a.active {
+  background-color: rgb(128, 128, 128, 0.2);
+  color: rgb(75, 239, 135);
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
