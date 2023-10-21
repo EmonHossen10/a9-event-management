@@ -5,6 +5,8 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import US from "../Pages/US/US";
 import ServiceDetails from "../Pages/Service/ServiceDetails";
 import UpcomingCourse from "../Pages/UpcomingCourse/UpcomingCourse";
+import Login from "../Pages/Login/Login";
+import Register from "../Pages/Register/Register";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
       {
         path:"/upcoming",
         element:  <UpcomingCourse></UpcomingCourse>
+      },
+      {
+        path:"/login",
+        element:<Login></Login>
+      },
+      {
+        path:"/register",
+        element:<Register></Register>
       },
     ],
   },

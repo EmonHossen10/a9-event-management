@@ -1,6 +1,18 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../Providers/AuthProvider";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => toast("User LogOut Successfully"))
+      .catch((error) => console.error(error));
+  };
+
   const nav = (
     <>
       <li>
@@ -18,26 +30,32 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink 
-        className={({ isActive, isPending }) =>
-        isPending
-          ? "pending"
-          : isActive
-          ? "bg-gray-200  font-semibold text-green-400 "
-          : ""
-      }
-        to="/about">About</NavLink>
+        <NavLink
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? "bg-gray-200  font-semibold text-green-400 "
+              : ""
+          }
+          to="/about"
+        >
+          About
+        </NavLink>
       </li>
       <li>
         <NavLink
-        className={({ isActive, isPending }) =>
-        isPending
-          ? "pending"
-          : isActive
-          ? "bg-gray-200  font-semibold text-green-400 "
-          : ""
-      }
-        to="/upcoming">Up Coming</NavLink>
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? "bg-gray-200  font-semibold text-green-400 "
+              : ""
+          }
+          to="/upcoming"
+        >
+          Up Coming
+        </NavLink>
       </li>
     </>
   );
@@ -68,14 +86,33 @@ const Navbar = () => {
             {nav}
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost normal-case md:text-xl text-sm ">Excellence Trainings</Link>
+        <Link to="/" className="btn btn-ghost normal-case md:text-xl text-sm ">
+          Excellence Trainings
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal gap-5 font-semibold px-1">{nav}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        {user ? (
+          <>
+            <span className="mr-5">{user.email}</span>
+            <div className="avatar">
+              <div className="w-10 mr-2 rounded-full">
+                <img src={user.photoURL} />
+              </div>
+            </div>
+            <button onClick={handleLogOut} className="btn btn-primary btn-sm">
+              Sign Out
+            </button>
+          </>
+        ) : (
+          <Link to="/login">
+            <button className="btn btn-primary btn-sm">Login</button>
+          </Link>
+        )}
       </div>
+      <ToastContainer />
     </div>
   );
 };
