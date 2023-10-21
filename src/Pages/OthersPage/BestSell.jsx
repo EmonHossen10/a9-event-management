@@ -9,9 +9,9 @@ const BestSell = () => {
     
 
   return (
-    <div className="font-roboto" >
+    <div className="font-roboto mb-10" >
 
-        <h2 className="text-5xl text-center mb-10 font-bold ">Our Best Selling Programme</h2>
+        <h2 className="md:text-5xl text-2xl text-center md:my-10 my-5 font-bold ">Our Best Selling Programme</h2>
       <Marquee  pauseOnHover speed={120} direction="left">
         {show.map((item) => (
           <div

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "img":"https://i.ibb.co/YPjt0Df/young-confident-man-black-suit-crossed-hands-standing-half-turned-against-gray-baclground-young-conf.webp",
+    "name": "James",
+    "ratings": 4.5,
+    "description": "Outstanding Learning Experience: I recently completed a training program at this center, and I couldn't be more pleased. The instructors were incredibly knowledgeable and engaging. The curriculum was well-structured, and the hands-on activities helped solidify my understanding. I highly recommend this center to anyone seeking high-quality training."
+  },
+  {
+    "id": 2,
+    "img":"https://i.ibb.co/nr5Htrp/360-F-224869519-a-Rae-Lneq-ALf-PNBzg0xx-MZXghtv-BXkf-IA.jpg",
+    "name": "Robert",
+    "ratings": 4.8,
+    "description": "Exceptional Support: What sets this training center apart is the exceptional level of support they provide. The staff goes above and beyond to ensure you have a positive learning experience. From personalized guidance to readily available resources, they make sure you succeed. I can't thank them enough for their dedication."
+  },
+  {
+    "id": 3,
+    "img":"https://i.ibb.co/GThRfDN/pexels-photo-2379004.jpg",
+    "name": "William",
+    "ratings": 5,
+    "description": "Practical and Applicable Skills: The training I received here was not just theoretical; it was highly practical and immediately applicable in my work. I appreciated the focus on real-world scenarios and problem-solving. The skills I gained have made a significant impact on my career, and I'm grateful for the training center's commitment to relevance."
+  },
+  {
+    "id": 4,
+    "img":"https://i.ibb.co/YyMpf3m/360-F-115852367-E6i-IYA8-Ox-HDm-Rhjw7k-Oq4u-Ye4t440f14.jpg",
+    "name": "Richard",
+    "ratings": 4.4,
+    "description": "Friendly and Inclusive Environment: Attending training here was a joy. The environment is welcoming and inclusive. I had the opportunity to collaborate with people from diverse backgrounds, which enriched my learning experience. The center's commitment to creating a friendly and respectful atmosphere truly sets it apart."
+  }
+]
