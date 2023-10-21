@@ -10,16 +10,14 @@ const TrainingServices = () => {
         Our Training Services{" "}
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:my-16
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:my-16
       w-10/12 mx-auto gap-8
-      ">
-        {services &&
-          services.map((service) => (
-            <SingleService 
-            key={service.id}
-             service={service}
-             ></SingleService>
-          ))}
+      "
+      >
+        {services?.map(service => (
+          <SingleService key={service?.id} service={service}></SingleService>
+        ))}
       </div>
     </div>
   );
