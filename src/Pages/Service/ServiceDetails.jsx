@@ -1,6 +1,8 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ServiceDetails = () => {
   const { id } = useParams();
@@ -9,6 +11,10 @@ const ServiceDetails = () => {
   const single = allData.find((item) => item.id == id);
 
   const { name, image, price, description } = single;
+
+  const handleToast=()=>{
+    toast.success("Successfully Enrolled Program ")
+  }
 
   return (
     <div>
@@ -25,11 +31,12 @@ const ServiceDetails = () => {
           <p className="text-sm">{description}</p>
           <p className="md:text-3xl font-bold text-green-400">Price: ${price}</p>
           <div className="card-actions justify-end">
-            <button  className="btn  btn-info">Enroll</button> 
+            <button  onClick={handleToast} className="btn  btn-info">Enroll</button> 
          <Link to="/" > <button className="btn btn-accent">Go Home</button></Link>
           </div>
         </div>
       </div>
+      <ToastContainer />
 
       <Footer></Footer>
     </div>
