@@ -11,7 +11,7 @@ const ClientReview = () => {
   }, []);
   return (
     <div className="font-roboto">
-      <h2 className="md:text-5xl text-2xl text-center md:my-10 my-5 font-bold ">
+      <h2 data-aos="flip-up" className="md:text-5xl text-2xl text-center md:my-10 my-5 font-bold ">
         Clients Review
       </h2>
 

@@ -7,6 +7,7 @@ import ServiceDetails from "../Pages/Service/ServiceDetails";
 import UpcomingCourse from "../Pages/UpcomingCourse/UpcomingCourse";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -22,16 +23,16 @@ const router = createBrowserRouter([
       },
       {
         path:"/service/:id",
-        element:<ServiceDetails></ServiceDetails>,
+        element:<PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
         loader:()=>fetch("/data.json")
       },
       {
         path:"/about",
-        element:  <US></US>
+        element:  <PrivateRoute><US></US></PrivateRoute>
       },
       {
         path:"/upcoming",
-        element:  <UpcomingCourse></UpcomingCourse>
+        element:  <PrivateRoute><UpcomingCourse></UpcomingCourse></PrivateRoute>
       },
       {
         path:"/login",

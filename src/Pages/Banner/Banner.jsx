@@ -1,10 +1,21 @@
+import   { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Banner = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <section className="flex justify-between min-h-screen font-roboto items-center p-16 flex-col-reverse  lg:flex-row gap-5 bg-base-200">
         {/* Text part */}
         <div className="  lg:w-6/12 md:mx-auto">
-          <h3 className="lg:text-5xl font-roboto text-3xl  font-bold lg:leading-snug ">
+          <h3
+            data-aos="flip-up"
+            className="lg:text-5xl font-roboto text-3xl  font-bold lg:leading-snug "
+          >
             <span className="font-bold text-blue-500">
               Best Training Programs
             </span>{" "}
@@ -28,6 +39,7 @@ const Banner = () => {
         {/* image part */}
         <div className=" lg:w-5/12 mx-auto  ">
           <img
+            data-aos="flip-right"
             src="https://i.ibb.co/1KH0xSF/istockphoto-1366428092-612x612.jpg"
             alt=""
           />

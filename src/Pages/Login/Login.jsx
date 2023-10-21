@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
@@ -7,11 +7,15 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const { signInUSer, GoogleSignIn } = useContext(AuthContext);
-
   const [success, setSuccess] = useState(null);
   const [error, setError] = useState(null);
 
+  const location=useLocation()
+  console.log("Inside Login form in ",location.state)
+  const navigate=useNavigate()
+
   const handleLogin = (e) => {
+
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
@@ -26,6 +30,10 @@ const Login = () => {
         console.log(result.user);
         setSuccess("Successfully Login.");
         toast("Successfully Login.");
+
+        
+        // navigate after login
+        navigate(location?.state ? location.state : "/")
       })
       .catch((error) => {
         setError(error.message);
@@ -44,6 +52,8 @@ const Login = () => {
         console.log(result.user);
         setSuccess("Successfully Login.");
         toast("Successfully Login.");
+        // navigate after login
+        navigate(location?.state ? location.state : "/")
       })
       .catch((error) => {
         console.error(error.message);
