@@ -37,7 +37,7 @@ const Navbar = () => {
           ? "bg-gray-200  font-semibold text-green-400 "
           : ""
       }
-        to="/contact">Contact Us</NavLink>
+        to="/upcoming">Up Coming</NavLink>
       </li>
     </>
   );

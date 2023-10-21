@@ -3,8 +3,8 @@ import Layout from "../Layout/Layout";
 import Home from "../Pages/Home/Home";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import US from "../Pages/US/US";
-import Contact from "../Pages/Contact/Contact";
 import ServiceDetails from "../Pages/Service/ServiceDetails";
+import UpcomingCourse from "../Pages/UpcomingCourse/UpcomingCourse";
 
 const router = createBrowserRouter([
   {
@@ -28,8 +28,8 @@ const router = createBrowserRouter([
         element:  <US></US>
       },
       {
-        path:"/contact",
-        element:  <Contact></Contact>
+        path:"/upcoming",
+        element:  <UpcomingCourse></UpcomingCourse>
       },
     ],
   },

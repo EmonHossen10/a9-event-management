@@ -63,8 +63,8 @@ const US = () => {
           We invite you to explore our course offerings, get to know our
           passionate instructors, and embark on a learning journey that can
           transform your career. Whether you are an individual looking to
-          upskill or a business seeking tailored training solutions, [Your
-          Website Name] is here to support your goals.
+          upskill or a business seeking tailored training solutions, Your is
+          here to support your goals.
         </p>
       </section>
     </div>
