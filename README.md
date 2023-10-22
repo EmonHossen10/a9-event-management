@@ -1,7 +1,5 @@
 # features and functionalities :
 
-
-
 - **Navigation:** The homepage features a navigation bar that allows users to easily navigate to different sections of the website.
 
 - **Banner:** The homepage includes an engaging banner/slider section that can showcase important content or images.
@@ -14,5 +12,7 @@
 
 
 
+## Website Name  :
+Training Programs
 
 ## Live Site Link
