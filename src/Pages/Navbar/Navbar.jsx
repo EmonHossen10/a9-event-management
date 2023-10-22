@@ -61,7 +61,7 @@ const Navbar = () => {
   );
   return (
     <div className="navbar bg-base-100 shadow-lg ">
-      <div className="navbar-start">
+      <div className="navbar-start pt-[150px] md:pt-0 lg:pt-0 ">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
@@ -96,12 +96,18 @@ const Navbar = () => {
       <div className="navbar-end">
         {user ? (
           <>
-            <span className="mr-5">{user.email}</span>
-            <div className="avatar">
-              <div className="w-10 mr-2 rounded-full">
-                <img src={user.photoURL} />
+            <section>
+              <div className="flex flex-col">
+                <span className="mr-5">{user.email}</span>
+                <span>{user.displayName}</span>
               </div>
-            </div>
+              <div className="avatar">
+                <div className="w-10 mr-2 rounded-full">
+                  <img src={user.photoURL} />
+                </div>
+              </div>
+            </section>
+
             <button onClick={handleLogOut} className="btn btn-primary btn-sm">
               Sign Out
             </button>
