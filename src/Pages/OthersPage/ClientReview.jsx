@@ -10,7 +10,7 @@ const ClientReview = () => {
       .then((data) => setClient(data));
   }, []);
   return (
-    <div className="font-roboto">
+    <div className="font-roboto w-11/12 mx-auto ">
       <h2 data-aos="flip-up" className="md:text-5xl text-2xl text-center md:my-10 my-5 font-bold ">
         Clients Review
       </h2>

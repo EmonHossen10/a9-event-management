@@ -7,7 +7,7 @@ import TrainingServices from "../Service/TrainingServices";
 
 const Home = () => {
   return (
-    <div>
+    <div >
       <Navbar></Navbar>
       <Banner></Banner>
       <TrainingServices></TrainingServices>

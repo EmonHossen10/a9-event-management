@@ -13,7 +13,7 @@ const TrainingServices = () => {
     AOS.init();
   }, []);
   return (
-    <div>
+    <div className="w-11/12 mx-auto">
       <h2 data-aos="flip-up"  className="md:text-5xl text-2xl font-bold font-roboto  text-center  my-5 md:my-10">
         Our Training Services
       </h2>

@@ -7,7 +7,7 @@ const BestSell = () => {
   const show = data.filter((item) => item.id % 2 === 0);
 
   return (
-    <div className="font-roboto mb-10">
+    <div className="font-roboto mb-10 w-11/12 mx-auto ">
       <h2
         data-aos="flip-up"
         className="md:text-5xl text-2xl text-center md:my-10 my-5 font-bold "
